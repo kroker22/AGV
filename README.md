@@ -41,7 +41,6 @@ VSCODE 에 arduino ide 를 설치하여 개발을 하고자 했다.
 
 
 3-
-
 gnome-terminal 과 vscode가 사용하는 python version 이 달랐기 때문에 이를 맞춰 주었다.
 
 https://inistory.tistory.com/180
@@ -49,15 +48,34 @@ https://inistory.tistory.com/180
 위의 링크를 참고해서 python version 을 같게 만들어 줬다.
 
 
-4-
 
+4-
 다행히도 아두이노 메가 쉴드와 모터가 한 세트였기 때문에 쉴드를 만든 회사에서 주는 예제 코드가 있었다.
 하지만 엔코더값을 측정하는 코드는 없었고 직접 만들어야 했다. 
 
  ![image](https://github.com/kroker22/arduino/assets/156269847/71307680-edc8-4087-bd86-6cafb379381b)
 
+![image](https://github.com/kroker22/arduino/assets/156269847/883d6f9e-cccc-426f-a6f2-880a02e223ce)
+
 ![image](https://github.com/kroker22/arduino/assets/156269847/c851b588-1905-46f3-a183-d29ccdc02ee6)
 
 변수타입을 volatile int 로 선언 해서
 간단하게 인터럽트를 사용했고, 같은 방향이면 변수에 더해주고, 반대방향이면 빼주는것으로 하였다.
+
+
+5-
+처음 전원이 라즈베리파이에 들어가게 되면 바로 python - opencv 를 통해 바닥에 있는 길을 인식하고
+Pyserial을 통해 실시간으로 라즈베리파이가 아두이노 메가에 명령을 주어 라인을 따라가게 하고자 하였다.  
+opencv 의 사용이 숙련되지 않았기 때문에 GPT 를 활용해서 코드를 짜보았다. 
+
+하지만 데이터 처리에 문제가 생긴것 같아 실시간 영상이 제대로 구현되지 않았고, 넘어가는 명령도 제대로 인식이 되지않아
+엄청 끊기는 현상이 발견되었다.
+![image](https://github.com/kroker22/arduino/assets/156269847/a4dcb5ac-cd09-4e43-a6af-e794dd5c3a72)
+
+그래서 timeout = 0.1 을 넣어서 시리얼이 끊기는것에 어느정도 유예시간을 주었고
+Python thread 모듈을 사용하여 실행되는 함수에 나름의 우선순위를 정하였다.
+( 정확히는 우선순위가 아니라 " 전역변수 " centroid 에 대한 주도권을 thread lock, time sleep 을 써서 정하였다.)
+
+
+![image](https://github.com/kroker22/arduino/assets/156269847/e8e173d9-936d-4965-b147-cc396eb484f0)
 
