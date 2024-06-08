@@ -20,6 +20,7 @@ https://blog.naver.com/roboholic84/221701573539
 2-
 
 파이썬 설치, 필요한 개발 환경 만들기에서 Arduino IDE 2.0 을 설치하고자 했으나 안타깝게도 ARM64 에서는 1.0 version 만 설치가 가능했다.
+( Arduino 1.0 ver 은 글씨가 이상하게 보여서 눈이 아팠기 때문에 .. )
   1) https://github.com/koendv/arduino-ide-raspberrypi
   2) https://forum.arduino.cc/t/install-2-2-on-rasberry-pi-4-raspberry-pi-64bit-os/1034417
 
@@ -36,3 +37,11 @@ https://ttuk-ttak.tistory.com/31
 https://conceptbug.tistory.com/entry/macOS-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-IDE%EB%A5%BC-VSCode%EB%A1%9C-%EB%8C%80%EC%B2%B4%ED%95%98%EA%B8%B0
 
 위의 링크들을 참고해서 include path 문제를 해결 하였다.
+
+
+
+3-
+
+gnome-terminal 과 vscode가 사용하는 python version 이 달랐기 때문에 이를 맞춰 주었다.
+
+
