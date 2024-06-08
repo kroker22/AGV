@@ -31,6 +31,8 @@ VSCODE 에 arduino ide 를 설치하여 개발을 하고자 했다.
 ![image](https://github.com/kroker22/arduino/assets/156269847/874a290a-67bb-4a83-94a6-14d77da69ab5)
 
 개발 과정에서  include path 문제가 생겨서 
+
 https://ttuk-ttak.tistory.com/31
+https://conceptbug.tistory.com/entry/macOS-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-IDE%EB%A5%BC-VSCode%EB%A1%9C-%EB%8C%80%EC%B2%B4%ED%95%98%EA%B8%B0
 
 위의 링크들을 참고해서 include path 문제를 해결 하였다.
