@@ -33,8 +33,8 @@ VSCODE 에 arduino ide 를 설치하여 개발을 하고자 했다.
 
 개발 과정에서  include path 문제가 생겨서 
 
-https://ttuk-ttak.tistory.com/31
-https://conceptbug.tistory.com/entry/macOS-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-IDE%EB%A5%BC-VSCode%EB%A1%9C-%EB%8C%80%EC%B2%B4%ED%95%98%EA%B8%B0
+  1) https://ttuk-ttak.tistory.com/31
+  2)https://conceptbug.tistory.com/entry/macOS-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-IDE%EB%A5%BC-VSCode%EB%A1%9C-%EB%8C%80%EC%B2%B4%ED%95%98%EA%B8%B0
 
 위의 링크들을 참고해서 include path 문제를 해결 하였다.
 
@@ -44,4 +44,20 @@ https://conceptbug.tistory.com/entry/macOS-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8-
 
 gnome-terminal 과 vscode가 사용하는 python version 이 달랐기 때문에 이를 맞춰 주었다.
 
+https://inistory.tistory.com/180
+
+위의 링크를 참고해서 python version 을 같게 만들어 줬다.
+
+
+4-
+
+다행히도 아두이노 메가 쉴드와 모터가 한 세트였기 때문에 쉴드를 만든 회사에서 주는 예제 코드가 있었다.
+하지만 엔코더값을 측정하는 코드는 없었고 직접 만들어야 했다. 
+
+ ![image](https://github.com/kroker22/arduino/assets/156269847/71307680-edc8-4087-bd86-6cafb379381b)
+
+![image](https://github.com/kroker22/arduino/assets/156269847/c851b588-1905-46f3-a183-d29ccdc02ee6)
+
+변수타입을 volatile int 로 선언 해서
+간단하게 인터럽트를 사용했고, 같은 방향이면 변수에 더해주고, 반대방향이면 빼주는것으로 하였다.
 
