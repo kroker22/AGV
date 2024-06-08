@@ -22,9 +22,15 @@ https://blog.naver.com/roboholic84/221701573539
 파이썬 설치, 필요한 개발 환경 만들기에서 Arduino IDE 2.0 을 설치하고자 했으나 안타깝게도 ARM64 에서는 1.0 version 만 설치가 가능했다.
   1) https://github.com/koendv/arduino-ide-raspberrypi
   2) https://forum.arduino.cc/t/install-2-2-on-rasberry-pi-4-raspberry-pi-64bit-os/1034417
+
 관련 링크이다. 설치가 가능은 하다고 나왔는데 나와있는 대로 따라해도 라즈베리파이 우분투에 설치가 제대로 되지 않았다.
 해서,
 
 VSCODE 에 arduino ide 를 설치하여 개발을 하고자 했다.
 
 ![image](https://github.com/kroker22/arduino/assets/156269847/874a290a-67bb-4a83-94a6-14d77da69ab5)
+
+개발 과정에서  include path 문제가 생겨서 
+https://ttuk-ttak.tistory.com/31
+
+위의 링크들을 참고해서 include path 문제를 해결 하였다.
