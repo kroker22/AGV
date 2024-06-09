@@ -88,5 +88,6 @@ Python thread 모듈을 사용하여 실행되는 함수에 나름의 우선순�
 
 
 
-![KakaoTalk_20240609_140755313_01](https://github.com/kroker22/arduino/assets/156269847/1e9c3ae9-da64-4f97-a125-65a0d3b1bb5e)![KakaoTalk_20240609_140755313](https://github.com/kroker22/arduino/assets/156269847/41c4126e-83f0-4907-aa65-67b317babb53)
+![KakaoTalk_20240609_140755313_01](https://github.com/kroker22/arduino/assets/156269847/1e9c3ae9-da64-4f97-a125-65a0d3b1bb5e)
+![KakaoTalk_20240609_140755313](https://github.com/kroker22/arduino/assets/156269847/41c4126e-83f0-4907-aa65-67b317babb53)
 
